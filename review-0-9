@@ -1,0 +1,40 @@
+Linux Commands:
+ls //lists commands
+cd (folder name)//change directory
+cd .. //move to previous directory
+mkdir <foldername> //creates a folder
+touch <filename> //creates an empty file
+gedit <filename> & //run gedit in terminal
+javac <classname>.java //compile .java file
+java <classname> //runs java file
+
+#1
+public class One {
+  public static void main (String[] args) {
+    System.out.print("Hello ");
+    System.out.println("World");
+    
+    //Output is
+    Hello World
+    
+public class Two {
+  public static void main (String[] args) {
+    System.out.println("2 + 3");
+    
+public class Three {
+  public static void main (String[] args) {
+    System.out.println(4 + 2);
+
+public class Four{
+  public static void main (String[] args) {
+  //System.out.print("Hello")
+    System.out.print("World")
+  
+public class Five {
+  public static void main (String[] args) {
+    System.out.print("Hello"); System.out.print(" World");
+    
+public class Six {
+  public static void main (String[] args) {
+    System.out.print("Hello"); //System.out.print(" World");
+    
