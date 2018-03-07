@@ -1,0 +1,70 @@
+If Statement Practice
+1. Assume a variable called 'mark' exista and holds some value 0-100. If the mark is over 50, output "pass", otherwise output "fail".
+
+import java.util.Scanner;
+public class ifOne{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("What is your mark out of 100?");
+    int mark = sc.nextInt();
+    if(mark < 50 && mark >=0){
+      System.out.println("You Fail!");
+    }
+      else if(mark >= 50 && mark <= 100){
+        System.out.println("You pass..");
+      }
+        else{
+          System.out.println("Number between 0-100 please");
+        }
+  }
+}
+
+2. Assume variables x and y exist and have integer values. If x is greater than y, output "x greater than y", if y is greater than x, output "y greater than x", otherwise output "x and y equal".
+
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Pick a number, any number!");
+    int firstNum = sc.nextInt();
+    System.out.println("Pick another number too");
+    int secondNum = sc.nextInt();
+    System.out.print("Okay ");
+    if(firstNum > secondNum){
+      System.out.println("your first number " + firstNum + " is greater than your second number " + secondNum);
+    }
+      else if(secondNum > firstNum){
+        System.out.println("your second number " + secondNum + " is greater than your first number " + firstNum);
+      }
+        else if(firstNum == secondNum){
+          System.out.println(", wow, you chose the same number twice..");
+        }
+  }
+}
+3. Assume a variable called 'age' already exists and has some integer value. If the age is greater or equal to 65, output "senior", if the age is less than that but greater than or equal 18, output "regular admission". if the age is less than 18 but older than 10 output "child", otherwise output "free".
+
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("How old are you?");
+    int age = sc.nextInt();
+    if(age > 65){
+      System.out.println("Senior");
+    }
+      else if(age <= 64 && age >= 18){
+        System.out.println("regular admission");
+      }
+        else if(age < 18 && age > 10){
+          System.out.println("Child");
+        }
+          else{
+            System.out.println("Free.");
+          }
+  }
+}
